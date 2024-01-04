@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: green;
+      background :url(cartoon.jpg) ;
+      background-size: cover;
+      background-position: center;
+     
+    }
+
+    .container {
+      text-align: center;
+      background-color: cyan;
+      padding: 50px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background:url(zombie.jpeg) ;
+      background-position: center;
+      background-size: cover;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      margin: auto;
+    }
+
+    label, input, button {
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #errorMessage {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="mahalkita@gmail.com" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password"placeholder="admin123" required>
+
+      <button type="button" onclick="login()">Login</button>
+    </form>
+    <p id="errorMessage"></p>
+  </div>
+  <script>
+    function login() {
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      
+      if (email ===
+      "davidaaronsabacahan@gmail.com" && password === "yong123") {
+        window.location.href = "homefinal.html";
+      } else {
+        document.getElementById("errorMessage").innerText = "Incorrect email or password. Please try again.";
+      }
+    }
+  </script>
+</body>
+</html>

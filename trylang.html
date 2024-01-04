@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="padding: 0; margin: 0; background-image:url(davidanime.png) ;background-size: cover;font-family: arial;">
+    <form id="LoginForm">
+        <div class="container"style="height:320px;width:270; top:50%;left: 50%;background-color: rgba(0,0,0,0.4);position: absolute;padding:10px;transform:translate(-50%, -50%);text-align:center;border-radius:20px;">
+            <h2>Login</h2>
+            <input type="text"name="username" placeholder="username"id="username"required><br>
+            <input type="password"name="password"placeholder="password"id="password"required><br>
+            <input type="button"value="Login"onclick="Credintials()">
+            
+    </form>
+    <script>
+        function Credintials(){
+            var enteredUsername = document.getElementById("username").value;
+            var enteredPassword = document.getElementById("password").value;
+
+            if(enteredUsername === "davidaaronsabacahan@gmail.com" && enteredPassword==="david"){
+            alert("LoginSucessfuly");
+            window.location.href = "homefinal.html";
+
+        } else{
+            alert("invalid username and password try again");
+        }
+    }
+    </script>
+
+    
+</body>
+</html>

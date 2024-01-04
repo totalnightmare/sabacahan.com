@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            font-family: 'Nosifer', cursive;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(haunted\ house.jpg);
+            background-size: cover;
+        }
+        header {
+            background-color: #8e44ad;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            text-align: center;
+            background-color: #ecf0f1;
+            padding: 10px;
+            align-items: center;
+            display: flex;
+            
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: bold;
+
+        }
+
+
+
+        ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        ul li{
+            list-style: none;
+            color: #980202;
+            font-size: 5em;
+            font-weight: bold;
+            letter-spacing: 10px;
+            filter: blur(1px);
+            transition: 4s;
+        }
+        ul li:hover,
+        ul li:hover~li{
+            transform: rotate(180deg)translateX(-200px);
+            transition: 2s;
+            filter: blur(20px);
+            opacity: 0;
+        }
+    </style>
+</head>
+<body> <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Galary.html">Galary</a>
+</nav>
+
+
+    <ul>
+        <li>a</li> 
+        <li>n</li>
+        <li>a</li>
+        <li>k</li>
+        <li>...</li>
+        <li>t</li>
+        <li>o</li>
+        <li>k</li>
+        <li>a</li>
+        <li>t</li>
+        <li>a</li>
+        <li>m</li>
+        <li>.</li>
+        <li>.</li>
+        <li>.</li>
+        <li>h</li>
+        <li>h</li>
+        <li>s</li>
+        <li>S</li>
+        <li><img src="ghost.jfif"</li>
+    </ul>
+    <!--<audio controls autoplay >
+        <source src="dead.mp3" type="audio/mp3">
+    </audio> -->
+    <audio id="bgMusic" src="dead.mp3"></audio>
+<script>
+    var audio = document.getElementById('bgMusic');
+    audio.play().then(() => {
+        // Autoplay started successfully
+    }).catch((error) => {
+        // Autoplay failed
+        console.error(error);
+    });
+</script>
+
+
+</body>
+</html>
